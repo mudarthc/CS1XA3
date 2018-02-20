@@ -8,4 +8,4 @@ git status
 
 echo "uncommited changes in file"
 
-git status > changes.log
+git diff  > changes.log
