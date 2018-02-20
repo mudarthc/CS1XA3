@@ -1,18 +1,14 @@
 #!/bin/bash
 
 clear 
-
-#part1
-git status 
+git status
+#part1 
 
 #part2
-rm changes.log
 git diff >>  changes.log
 
 #part3
-rm todo.log 
-
-grep "#TODO" . -R  > todo.log
+grep "#TODO" . -R  >> todo.log
 
 #part4 
-#ghc -fno-code *.hs &> error.log 
+ghc -fno-code *.hs &> error.log 
