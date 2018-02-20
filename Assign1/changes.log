@@ -465,3 +465,13 @@ index 34f176a..8bfdc59 100644
 ++----	changes.log
 ++----
 ++----nothing added to commit but untracked files present (use "git add" to track)
+diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
+index 29d8332..60ad0bc 100755
+--- a/Assign1/ProjectAnalyze.sh
++++ b/Assign1/ProjectAnalyze.sh
+@@ -16,4 +16,4 @@ grep "#TODO" . -R  >> todo.log
+ 
+ #part4 
+ 
+->> 
++ghc -fno-code file.hs >> error.log 

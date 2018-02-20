@@ -16,4 +16,4 @@ grep "#TODO" . -R  >> todo.log
 
 #part4 
 
->> 
+ghc -fno-code file.hs >> error.log 

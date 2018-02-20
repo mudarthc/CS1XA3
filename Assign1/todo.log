@@ -5,3 +5,10 @@
 ./test:#TODO this 
 ./test:#TODO is
 ./test:#TODO works
+./changes.log:+grep "#TODO" . -R  >> todo.log
+./changes.log:@@ -16,4 +16,4 @@ grep "#TODO" . -R  >> todo.log
+./ProjectAnalyze.sh:grep "#TODO" . -R  >> todo.log
+./test:#TODO jjsjf
+./test:#TODO this 
+./test:#TODO is
+./test:#TODO works
