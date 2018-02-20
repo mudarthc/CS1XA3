@@ -13,3 +13,7 @@ git diff >> changes.log
 
 #part3
 grep "#TODO" . -R  >> todo.log
+
+#part4 
+
+>> 
