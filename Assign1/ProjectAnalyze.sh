@@ -2,12 +2,11 @@
 
 clear 
 
-echo "local repo"
-
+#part1
 git status 
 
 echo "uncommited changes in file"
 
-rm changes.log 
+#part2
 
-git diff >> changes.log
+git diff > changes.log
