@@ -9,4 +9,7 @@ echo "uncommited changes in file"
 
 #part2
 
-git diff > changes.log
+git diff >> changes.log
+
+#part3
+grep "#TODO" . -R  >> todo.log

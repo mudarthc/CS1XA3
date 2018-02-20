@@ -1,66 +1,467 @@
-diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
-index fc8c041..ce551de 100755
---- a/Assign1/ProjectAnalyze.sh
-+++ b/Assign1/ProjectAnalyze.sh
-@@ -2,12 +2,11 @@
- 
- clear 
- 
--echo "local repo"
--
-+#part1
- git status 
- 
- echo "uncommited changes in file"
- 
--rm changes.log 
-+#part2
- 
--git diff >> changes.log
-+git diff > changes.log
 diff --git a/Assign1/changes.log b/Assign1/changes.log
-index eba81b8..e69de29 100644
+index 34f176a..e69de29 100644
 --- a/Assign1/changes.log
 +++ b/Assign1/changes.log
-@@ -1,41 +0,0 @@
+@@ -1,66 +0,0 @@
 -diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
--index d474b21..fc8c041 100755
+-index fc8c041..ce551de 100755
 ---- a/Assign1/ProjectAnalyze.sh
 -+++ b/Assign1/ProjectAnalyze.sh
--@@ -8,4 +8,6 @@ git status
+-@@ -2,12 +2,11 @@
+- 
+- clear 
+- 
+--echo "local repo"
+--
+-+#part1
+- git status 
 - 
 - echo "uncommited changes in file"
 - 
---git diff  > changes.log
--+rm changes.log 
--+
--+git diff >> changes.log
+--rm changes.log 
+-+#part2
+- 
+--git diff >> changes.log
+-+git diff > changes.log
 -diff --git a/Assign1/changes.log b/Assign1/changes.log
--index 71377e9..e69de29 100644
+-index eba81b8..e69de29 100644
 ---- a/Assign1/changes.log
 -+++ b/Assign1/changes.log
--@@ -1,24 +0,0 @@
+-@@ -1,41 +0,0 @@
 --diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
---index 5bf89e5..d474b21 100755
+--index d474b21..fc8c041 100755
 ----- a/Assign1/ProjectAnalyze.sh
 --+++ b/Assign1/ProjectAnalyze.sh
---@@ -8,4 +8,4 @@ git status
+--@@ -8,4 +8,6 @@ git status
 -- 
 -- echo "uncommited changes in file"
 -- 
----git status > changes.log
---+git diff  > changes.log
+---git diff  > changes.log
+--+rm changes.log 
+--+
+--+git diff >> changes.log
 --diff --git a/Assign1/changes.log b/Assign1/changes.log
---index b03588a..e69de29 100644
+--index 71377e9..e69de29 100644
 ----- a/Assign1/changes.log
 --+++ b/Assign1/changes.log
---@@ -1,9 +0,0 @@
----On branch master
----Your branch is up-to-date with 'origin/master'.
----Untracked files:
----  (use "git add <file>..." to include in what will be committed)
----
----	ProjectAnalyze.sh
----	changes.log
----
----nothing added to commit but untracked files present (use "git add" to track)
+--@@ -1,24 +0,0 @@
+---diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
+---index 5bf89e5..d474b21 100755
+------ a/Assign1/ProjectAnalyze.sh
+---+++ b/Assign1/ProjectAnalyze.sh
+---@@ -8,4 +8,4 @@ git status
+--- 
+--- echo "uncommited changes in file"
+--- 
+----git status > changes.log
+---+git diff  > changes.log
+---diff --git a/Assign1/changes.log b/Assign1/changes.log
+---index b03588a..e69de29 100644
+------ a/Assign1/changes.log
+---+++ b/Assign1/changes.log
+---@@ -1,9 +0,0 @@
+----On branch master
+----Your branch is up-to-date with 'origin/master'.
+----Untracked files:
+----  (use "git add <file>..." to include in what will be committed)
+----
+----	ProjectAnalyze.sh
+----	changes.log
+----
+----nothing added to commit but untracked files present (use "git add" to track)
+diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
+index ce551de..43ca022 100755
+--- a/Assign1/ProjectAnalyze.sh
++++ b/Assign1/ProjectAnalyze.sh
+@@ -9,4 +9,4 @@ echo "uncommited changes in file"
+ 
+ #part2
+ 
+-git diff > changes.log
++git diff >> changes.log
+diff --git a/Assign1/changes.log b/Assign1/changes.log
+index 34f176a..fefa694 100644
+--- a/Assign1/changes.log
++++ b/Assign1/changes.log
+@@ -1,66 +1,71 @@
+-diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
+-index fc8c041..ce551de 100755
+---- a/Assign1/ProjectAnalyze.sh
+-+++ b/Assign1/ProjectAnalyze.sh
+-@@ -2,12 +2,11 @@
+- 
+- clear 
+- 
+--echo "local repo"
+--
+-+#part1
+- git status 
+- 
+- echo "uncommited changes in file"
+- 
+--rm changes.log 
+-+#part2
+- 
+--git diff >> changes.log
+-+git diff > changes.log
+ diff --git a/Assign1/changes.log b/Assign1/changes.log
+-index eba81b8..e69de29 100644
++index 34f176a..e69de29 100644
+ --- a/Assign1/changes.log
+ +++ b/Assign1/changes.log
+-@@ -1,41 +0,0 @@
++@@ -1,66 +0,0 @@
+ -diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
+--index d474b21..fc8c041 100755
++-index fc8c041..ce551de 100755
+ ---- a/Assign1/ProjectAnalyze.sh
+ -+++ b/Assign1/ProjectAnalyze.sh
+--@@ -8,4 +8,6 @@ git status
++-@@ -2,12 +2,11 @@
++- 
++- clear 
++- 
++--echo "local repo"
++--
++-+#part1
++- git status 
+ - 
+ - echo "uncommited changes in file"
+ - 
+---git diff  > changes.log
+--+rm changes.log 
+--+
+--+git diff >> changes.log
++--rm changes.log 
++-+#part2
++- 
++--git diff >> changes.log
++-+git diff > changes.log
+ -diff --git a/Assign1/changes.log b/Assign1/changes.log
+--index 71377e9..e69de29 100644
++-index eba81b8..e69de29 100644
+ ---- a/Assign1/changes.log
+ -+++ b/Assign1/changes.log
+--@@ -1,24 +0,0 @@
++-@@ -1,41 +0,0 @@
+ --diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
+---index 5bf89e5..d474b21 100755
++--index d474b21..fc8c041 100755
+ ----- a/Assign1/ProjectAnalyze.sh
+ --+++ b/Assign1/ProjectAnalyze.sh
+---@@ -8,4 +8,4 @@ git status
++--@@ -8,4 +8,6 @@ git status
+ -- 
+ -- echo "uncommited changes in file"
+ -- 
+----git status > changes.log
+---+git diff  > changes.log
++---git diff  > changes.log
++--+rm changes.log 
++--+
++--+git diff >> changes.log
+ --diff --git a/Assign1/changes.log b/Assign1/changes.log
+---index b03588a..e69de29 100644
++--index 71377e9..e69de29 100644
+ ----- a/Assign1/changes.log
+ --+++ b/Assign1/changes.log
+---@@ -1,9 +0,0 @@
+----On branch master
+----Your branch is up-to-date with 'origin/master'.
+----Untracked files:
+----  (use "git add <file>..." to include in what will be committed)
+----
+----	ProjectAnalyze.sh
+----	changes.log
+----
+----nothing added to commit but untracked files present (use "git add" to track)
++--@@ -1,24 +0,0 @@
++---diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
++---index 5bf89e5..d474b21 100755
++------ a/Assign1/ProjectAnalyze.sh
++---+++ b/Assign1/ProjectAnalyze.sh
++---@@ -8,4 +8,4 @@ git status
++--- 
++--- echo "uncommited changes in file"
++--- 
++----git status > changes.log
++---+git diff  > changes.log
++---diff --git a/Assign1/changes.log b/Assign1/changes.log
++---index b03588a..e69de29 100644
++------ a/Assign1/changes.log
++---+++ b/Assign1/changes.log
++---@@ -1,9 +0,0 @@
++----On branch master
++----Your branch is up-to-date with 'origin/master'.
++----Untracked files:
++----  (use "git add <file>..." to include in what will be committed)
++----
++----	ProjectAnalyze.sh
++----	changes.log
++----
++----nothing added to commit but untracked files present (use "git add" to track)
+diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
+index ce551de..bf4ada2 100755
+--- a/Assign1/ProjectAnalyze.sh
++++ b/Assign1/ProjectAnalyze.sh
+@@ -9,4 +9,7 @@ echo "uncommited changes in file"
+ 
+ #part2
+ 
+-git diff > changes.log
++git diff >> changes.log
++
++#part3
++grep "#TODO" . -R  >> todo.log
+diff --git a/Assign1/changes.log b/Assign1/changes.log
+index 34f176a..8bfdc59 100644
+--- a/Assign1/changes.log
++++ b/Assign1/changes.log
+@@ -1,66 +1,202 @@
+-diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
+-index fc8c041..ce551de 100755
+---- a/Assign1/ProjectAnalyze.sh
+-+++ b/Assign1/ProjectAnalyze.sh
+-@@ -2,12 +2,11 @@
+- 
+- clear 
+- 
+--echo "local repo"
+--
+-+#part1
+- git status 
+- 
+- echo "uncommited changes in file"
+- 
+--rm changes.log 
+-+#part2
+- 
+--git diff >> changes.log
+-+git diff > changes.log
+ diff --git a/Assign1/changes.log b/Assign1/changes.log
+-index eba81b8..e69de29 100644
++index 34f176a..e69de29 100644
+ --- a/Assign1/changes.log
+ +++ b/Assign1/changes.log
+-@@ -1,41 +0,0 @@
++@@ -1,66 +0,0 @@
+ -diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
+--index d474b21..fc8c041 100755
++-index fc8c041..ce551de 100755
+ ---- a/Assign1/ProjectAnalyze.sh
+ -+++ b/Assign1/ProjectAnalyze.sh
+--@@ -8,4 +8,6 @@ git status
++-@@ -2,12 +2,11 @@
++- 
++- clear 
++- 
++--echo "local repo"
++--
++-+#part1
++- git status 
+ - 
+ - echo "uncommited changes in file"
+ - 
+---git diff  > changes.log
+--+rm changes.log 
+--+
+--+git diff >> changes.log
++--rm changes.log 
++-+#part2
++- 
++--git diff >> changes.log
++-+git diff > changes.log
+ -diff --git a/Assign1/changes.log b/Assign1/changes.log
+--index 71377e9..e69de29 100644
++-index eba81b8..e69de29 100644
+ ---- a/Assign1/changes.log
+ -+++ b/Assign1/changes.log
+--@@ -1,24 +0,0 @@
++-@@ -1,41 +0,0 @@
+ --diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
+---index 5bf89e5..d474b21 100755
++--index d474b21..fc8c041 100755
+ ----- a/Assign1/ProjectAnalyze.sh
+ --+++ b/Assign1/ProjectAnalyze.sh
+---@@ -8,4 +8,4 @@ git status
++--@@ -8,4 +8,6 @@ git status
+ -- 
+ -- echo "uncommited changes in file"
+ -- 
+----git status > changes.log
+---+git diff  > changes.log
++---git diff  > changes.log
++--+rm changes.log 
++--+
++--+git diff >> changes.log
+ --diff --git a/Assign1/changes.log b/Assign1/changes.log
+---index b03588a..e69de29 100644
++--index 71377e9..e69de29 100644
+ ----- a/Assign1/changes.log
+ --+++ b/Assign1/changes.log
+---@@ -1,9 +0,0 @@
+----On branch master
+----Your branch is up-to-date with 'origin/master'.
+----Untracked files:
+----  (use "git add <file>..." to include in what will be committed)
+----
+----	ProjectAnalyze.sh
+----	changes.log
+----
+----nothing added to commit but untracked files present (use "git add" to track)
++--@@ -1,24 +0,0 @@
++---diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
++---index 5bf89e5..d474b21 100755
++------ a/Assign1/ProjectAnalyze.sh
++---+++ b/Assign1/ProjectAnalyze.sh
++---@@ -8,4 +8,4 @@ git status
++--- 
++--- echo "uncommited changes in file"
++--- 
++----git status > changes.log
++---+git diff  > changes.log
++---diff --git a/Assign1/changes.log b/Assign1/changes.log
++---index b03588a..e69de29 100644
++------ a/Assign1/changes.log
++---+++ b/Assign1/changes.log
++---@@ -1,9 +0,0 @@
++----On branch master
++----Your branch is up-to-date with 'origin/master'.
++----Untracked files:
++----  (use "git add <file>..." to include in what will be committed)
++----
++----	ProjectAnalyze.sh
++----	changes.log
++----
++----nothing added to commit but untracked files present (use "git add" to track)
++diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
++index ce551de..43ca022 100755
++--- a/Assign1/ProjectAnalyze.sh
+++++ b/Assign1/ProjectAnalyze.sh
++@@ -9,4 +9,4 @@ echo "uncommited changes in file"
++ 
++ #part2
++ 
++-git diff > changes.log
+++git diff >> changes.log
++diff --git a/Assign1/changes.log b/Assign1/changes.log
++index 34f176a..fefa694 100644
++--- a/Assign1/changes.log
+++++ b/Assign1/changes.log
++@@ -1,66 +1,71 @@
++-diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
++-index fc8c041..ce551de 100755
++---- a/Assign1/ProjectAnalyze.sh
++-+++ b/Assign1/ProjectAnalyze.sh
++-@@ -2,12 +2,11 @@
++- 
++- clear 
++- 
++--echo "local repo"
++--
++-+#part1
++- git status 
++- 
++- echo "uncommited changes in file"
++- 
++--rm changes.log 
++-+#part2
++- 
++--git diff >> changes.log
++-+git diff > changes.log
++ diff --git a/Assign1/changes.log b/Assign1/changes.log
++-index eba81b8..e69de29 100644
+++index 34f176a..e69de29 100644
++ --- a/Assign1/changes.log
++ +++ b/Assign1/changes.log
++-@@ -1,41 +0,0 @@
+++@@ -1,66 +0,0 @@
++ -diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
++--index d474b21..fc8c041 100755
+++-index fc8c041..ce551de 100755
++ ---- a/Assign1/ProjectAnalyze.sh
++ -+++ b/Assign1/ProjectAnalyze.sh
++--@@ -8,4 +8,6 @@ git status
+++-@@ -2,12 +2,11 @@
+++- 
+++- clear 
+++- 
+++--echo "local repo"
+++--
+++-+#part1
+++- git status 
++ - 
++ - echo "uncommited changes in file"
++ - 
++---git diff  > changes.log
++--+rm changes.log 
++--+
++--+git diff >> changes.log
+++--rm changes.log 
+++-+#part2
+++- 
+++--git diff >> changes.log
+++-+git diff > changes.log
++ -diff --git a/Assign1/changes.log b/Assign1/changes.log
++--index 71377e9..e69de29 100644
+++-index eba81b8..e69de29 100644
++ ---- a/Assign1/changes.log
++ -+++ b/Assign1/changes.log
++--@@ -1,24 +0,0 @@
+++-@@ -1,41 +0,0 @@
++ --diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
++---index 5bf89e5..d474b21 100755
+++--index d474b21..fc8c041 100755
++ ----- a/Assign1/ProjectAnalyze.sh
++ --+++ b/Assign1/ProjectAnalyze.sh
++---@@ -8,4 +8,4 @@ git status
+++--@@ -8,4 +8,6 @@ git status
++ -- 
++ -- echo "uncommited changes in file"
++ -- 
++----git status > changes.log
++---+git diff  > changes.log
+++---git diff  > changes.log
+++--+rm changes.log 
+++--+
+++--+git diff >> changes.log
++ --diff --git a/Assign1/changes.log b/Assign1/changes.log
++---index b03588a..e69de29 100644
+++--index 71377e9..e69de29 100644
++ ----- a/Assign1/changes.log
++ --+++ b/Assign1/changes.log
++---@@ -1,9 +0,0 @@
++----On branch master
++----Your branch is up-to-date with 'origin/master'.
++----Untracked files:
++----  (use "git add <file>..." to include in what will be committed)
++----
++----	ProjectAnalyze.sh
++----	changes.log
++----
++----nothing added to commit but untracked files present (use "git add" to track)
+++--@@ -1,24 +0,0 @@
+++---diff --git a/Assign1/ProjectAnalyze.sh b/Assign1/ProjectAnalyze.sh
+++---index 5bf89e5..d474b21 100755
+++------ a/Assign1/ProjectAnalyze.sh
+++---+++ b/Assign1/ProjectAnalyze.sh
+++---@@ -8,4 +8,4 @@ git status
+++--- 
+++--- echo "uncommited changes in file"
+++--- 
+++----git status > changes.log
+++---+git diff  > changes.log
+++---diff --git a/Assign1/changes.log b/Assign1/changes.log
+++---index b03588a..e69de29 100644
+++------ a/Assign1/changes.log
+++---+++ b/Assign1/changes.log
+++---@@ -1,9 +0,0 @@
+++----On branch master
+++----Your branch is up-to-date with 'origin/master'.
+++----Untracked files:
+++----  (use "git add <file>..." to include in what will be committed)
+++----
+++----	ProjectAnalyze.sh
+++----	changes.log
+++----
+++----nothing added to commit but untracked files present (use "git add" to track)

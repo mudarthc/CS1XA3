@@ -1,0 +1,7 @@
+
+./changes.log:+grep "#TODO" . -R  >> todo.log
+./ProjectAnalyze.sh:grep "#TODO" . -R  >> todo.log
+./test:#TODO jjsjf
+./test:#TODO this 
+./test:#TODO is
+./test:#TODO works
