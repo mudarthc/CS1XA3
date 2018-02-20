@@ -1,13 +1,73 @@
-
-./changes.log:+grep "#TODO" . -R  >> todo.log
-./ProjectAnalyze.sh:grep "#TODO" . -R  >> todo.log
-./test:#TODO jjsjf
-./test:#TODO this 
-./test:#TODO is
-./test:#TODO works
-./changes.log:+grep "#TODO" . -R  >> todo.log
-./changes.log:@@ -16,4 +16,4 @@ grep "#TODO" . -R  >> todo.log
-./ProjectAnalyze.sh:grep "#TODO" . -R  >> todo.log
+./changes.log:-grep "#TODO" . -R  >> todo.log
+./changes.log:+grep "#TODO" . -R  > todo.log
+./changes.log:-+grep "#TODO" . -R  >> todo.log
+./changes.log:-@@ -16,4 +16,4 @@ grep "#TODO" . -R  >> todo.log
+./changes.log:-./changes.log:+grep "#TODO" . -R  >> todo.log
+./changes.log:-./ProjectAnalyze.sh:grep "#TODO" . -R  >> todo.log
+./changes.log:-./test:#TODO jjsjf
+./changes.log:-./test:#TODO this 
+./changes.log:-./test:#TODO is
+./changes.log:-./test:#TODO works
+./changes.log:-./changes.log:+grep "#TODO" . -R  >> todo.log
+./changes.log:-./changes.log:@@ -16,4 +16,4 @@ grep "#TODO" . -R  >> todo.log
+./changes.log:-./ProjectAnalyze.sh:grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:-grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+grep "#TODO" . -R  > todo.log
+./changes.log:+./changes.log:-+grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:-@@ -16,4 +16,4 @@ grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:-./changes.log:+grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:-./ProjectAnalyze.sh:grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:-./test:#TODO jjsjf
+./changes.log:+./changes.log:-./test:#TODO this 
+./changes.log:+./changes.log:-./test:#TODO is
+./changes.log:+./changes.log:-./test:#TODO works
+./changes.log:+./changes.log:-./changes.log:+grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:-./changes.log:@@ -16,4 +16,4 @@ grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:-./ProjectAnalyze.sh:grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+./changes.log:-grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+./changes.log:+grep "#TODO" . -R  > todo.log
+./changes.log:+./changes.log:+./changes.log:-+grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+./changes.log:-@@ -16,4 +16,4 @@ grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+./changes.log:-./changes.log:+grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+./changes.log:-./ProjectAnalyze.sh:grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+./changes.log:-./test:#TODO jjsjf
+./changes.log:+./changes.log:+./changes.log:-./test:#TODO this 
+./changes.log:+./changes.log:+./changes.log:-./test:#TODO is
+./changes.log:+./changes.log:+./changes.log:-./test:#TODO works
+./changes.log:+./changes.log:+./changes.log:-./changes.log:+grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+./changes.log:-./changes.log:@@ -16,4 +16,4 @@ grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+./changes.log:-./ProjectAnalyze.sh:grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+./changes.log:+./changes.log:-grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+./changes.log:+./changes.log:+grep "#TODO" . -R  > todo.log
+./changes.log:+./changes.log:+./changes.log:+./changes.log:-+grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+./changes.log:+./changes.log:-@@ -16,4 +16,4 @@ grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+./changes.log:+./changes.log:-./changes.log:+grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+./changes.log:+./changes.log:-./ProjectAnalyze.sh:grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+./changes.log:+./changes.log:-./test:#TODO jjsjf
+./changes.log:+./changes.log:+./changes.log:+./changes.log:-./test:#TODO this 
+./changes.log:+./changes.log:+./changes.log:+./changes.log:-./test:#TODO is
+./changes.log:+./changes.log:+./changes.log:+./changes.log:-./test:#TODO works
+./changes.log:+./changes.log:+./changes.log:+./changes.log:-./changes.log:+grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+./changes.log:+./changes.log:-./changes.log:@@ -16,4 +16,4 @@ grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+./changes.log:+./changes.log:-./ProjectAnalyze.sh:grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:+./changes.log:+./changes.log:-./test:#TODO jjsjf
+./changes.log:+./changes.log:+./changes.log:+./changes.log:-./test:#TODO this 
+./changes.log:+./changes.log:+./changes.log:+./changes.log:-./test:#TODO is
+./changes.log:+./changes.log:+./changes.log:+./changes.log:-./test:#TODO works
+./changes.log:+./changes.log:+./changes.log:+./changes.log:+grep #TODO . -R
+./changes.log:+./changes.log:+./changes.log:+./ProjectAnalyze.sh:grep "#TODO" . -R  > todo.log
+./changes.log:+./changes.log:+./changes.log: ./test:#TODO jjsjf
+./changes.log:+./changes.log:+./changes.log: ./test:#TODO this 
+./changes.log:+./changes.log:+./changes.log: ./test:#TODO is
+./changes.log:+./changes.log:+./ProjectAnalyze.sh:grep "#TODO" . -R  > todo.log
+./changes.log:+./changes.log: ./test:#TODO jjsjf
+./changes.log:+./changes.log: ./test:#TODO this 
+./changes.log:+./changes.log: ./test:#TODO is
+./changes.log:+./ProjectAnalyze.sh:grep "#TODO" . -R  > todo.log
+./changes.log: ./test:#TODO jjsjf
+./changes.log: ./test:#TODO this 
+./changes.log: ./test:#TODO is
+./ProjectAnalyze.sh:grep "#TODO" . -R  > todo.log
 ./test:#TODO jjsjf
 ./test:#TODO this 
 ./test:#TODO is
