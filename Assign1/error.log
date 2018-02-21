@@ -3,3 +3,8 @@
 test.hs:4:9:
     Not in scope: ‘ok’
     Perhaps you meant ‘or’ (imported from Prelude)
+[1 of 1] Compiling Test             ( test.hs, nothing )
+
+test.hs:4:9:
+    Not in scope: ‘ok’
+    Perhaps you meant ‘or’ (imported from Prelude)

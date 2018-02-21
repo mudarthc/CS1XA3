@@ -1,1 +1,7 @@
-./ProjectAnalyze.sh:grep "#TODO" . -R  >> todo.log
+
+
+
+./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
