@@ -57,6 +57,7 @@ FS=":" read -p "Enter yes or no " \VAR4
 
 if [ $VAR4 = "yes" ]
         then
+	rm changes.log
 	echo " 
        _                                 _              
       | |                               | |             
@@ -77,6 +78,7 @@ FS=":" read -p "Enter yes or no " \VAR5
 
 if [ $VAR5 = "yes" ]
         then
+	rm todo.log
 	echo "
                       _              
              |       | |             
@@ -97,6 +99,7 @@ echo "Put all haskell errors into file error.log?"
 FS=":" read -p "Enter yes or no " \VAR6
 
 if [ $VAR6 = "yes" ]
+	rm error.log 
         then
 	echo "
                               _              
