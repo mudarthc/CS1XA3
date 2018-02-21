@@ -10,7 +10,7 @@ echo '
 echo "What is your name?"
 FS=":" read -p "enter your name " \VAR1 
             
-echo "Hi $VAR1, you are currently here: $(pwd)" 
+echo "Hi $VAR1, you are currently here: $(pwd) and here are your files in your current directory: $(ls -l)" 
 echo "
   ____________________________________________________________________________________________________________________________________________________________________________________________
   __)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)
@@ -67,6 +67,7 @@ if [ $VAR4 = "yes" ]
                              /|                    /|   
                              \|                    \|  "
 	git diff >>  changes.log
+	
 fi
 echo "
   ____________________________________________________________________________________________________________________________________________________________________________________________
@@ -99,8 +100,8 @@ echo "Put all haskell errors into file error.log?"
 FS=":" read -p "Enter yes or no " \VAR6
 
 if [ $VAR6 = "yes" ]
-	rm error.log 
-        then
+	then
+	rm error.log
 	echo "
                               _              
                              | |             
@@ -117,25 +118,62 @@ echo "
 / 　 づ  "
 echo "Great! Now would you like to veiw error.log, todo.log, or changes.log"
 FS=":" read -p "Enter todo, error, changes, or no " \VAR7
+line='wc -l todo.log'
+lines='wc -l error.log'
+liness='wc -l changes.log'
 
 if [ $VAR7 = "todo" ]
 	then
 	vim todo.log
+	echo "quick fact: number or lines in todo.log is:" 
+	$line
 elif [ $VAR7 = "error" ]
 	then
 	vim error.log
+	echo "quick fact: number or lines in error.log is:" 
+	$lines
 elif [ $VAR7 = "changes" ]
 	then 
 	vim changes.log
-else
-	echo "
+	echo "quick fact: number or lines in changes.log is:"
+	$liness
+fi
+
+echo "
+  ____________________________________________________________________________________________________________________________________________________________________________________________
+  __)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)
+ 
+ "
+echo "Would you like to find specific words in your current files?"
+FS=":" read -p "Enter yes or no " \VAR8
+
+if [ $VAR8 = "no" ]
+	then 
+       echo "
  _______  ___   _  _______  __   __    _______  __   __  _______   
 |       ||   | | ||   _   ||  | |  |  |  _    ||  | |  ||       |  
 |   _   ||   |_| ||  |_|  ||  |_|  |  | |_|   ||  |_|  ||    ___|  
 |  | |  ||      _||       ||       |  |       ||       ||   |___   
 |  |_|  ||     |_ |       ||_     _|  |  _   | |_     _||    ___|  
 |       ||    _  ||   _   |  |   |    | |_|   |  |   |  |   |___   
-|_______||___| |_||__| |__|  |___|    |_______|  |___|  |_______|  " 
-	exit
-
+|_______||___| |_||__| |__|  |___|    |_______|  |___|  |_______|  "
+        exit
 fi
+
+echo "type a key word or number you would like to find in your files:"
+FS=":" read -p "type.." \VAR8
+rm file
+grep "$VAR8" . -R >> file
+vim file
+echo "Thanks for using Project 1"
+echo "
+ _______  ___   _  _______  __   __    _______  __   __  _______   
+|       ||   | | ||   _   ||  | |  |  |  _    ||  | |  ||       |  
+|   _   ||   |_| ||  |_|  ||  |_|  |  | |_|   ||  |_|  ||    ___|  
+|  | |  ||      _||       ||       |  |       ||       ||   |___   
+|  |_|  ||     |_ |       ||_     _|  |  _   | |_     _||    ___|  
+|       ||    _  ||   _   |  |   |    | |_|   |  |   |  |   |___   
+|_______||___| |_||__| |__|  |___|    |_______|  |___|  |_______|  "
+        
+
+

@@ -1,0 +1,2 @@
+./test.hs:fib 0 = ok 
+./error.log:    Not in scope: ‘ok’
