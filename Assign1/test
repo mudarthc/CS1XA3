@@ -1,9 +1,26 @@
-#!/bin/bash
+#!/bin/bash 
+echo "would you like to add and commmit these changes to git?"
+FS=":" read -p "Enter yes or no " \VAR12
 
-if zenity --entry \
-	title="Add new profile" \
-	text="Enter name of new profile:" \
-	entry-text "NewProfile"
-  	then echo $?
-  	else echo "No name entered"
+if [ $VAR12 = "yes" ]
+then
+	git add .
+else 
+	clear 
+fi  
+echo "what would you like your commit message to be?"
+FS=":" read -p "Enter your message" \VAR11
+
+git commit -m "$VAR11"
+
+echo "type 'push' to push these changes to git"
+
+FS=":" read -p "Enter 'push' or 'no'" \VAR15
+
+if [ $VAR15 = "push" ]
+then
+	git push
+else
+	clear
 fi
+

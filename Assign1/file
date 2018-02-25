@@ -1,2 +1,1 @@
-./test.hs:fib 0 = ok 
-./error.log:    Not in scope: ‘ok’
+./ProjectAnalyze.sh:echo "Put all uncommited changes into changes.log"
