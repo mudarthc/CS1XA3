@@ -147,24 +147,30 @@ echo "
 echo "Would you like to find specific words in your current files?"
 FS=":" read -p "Enter yes or no " \VAR8
 
-if [ $VAR8 = "no" ]
-	then 
-       echo "
- _______  ___   _  _______  __   __    _______  __   __  _______   
-|       ||   | | ||   _   ||  | |  |  |  _    ||  | |  ||       |  
-|   _   ||   |_| ||  |_|  ||  |_|  |  | |_|   ||  |_|  ||    ___|  
-|  | |  ||      _||       ||       |  |       ||       ||   |___   
-|  |_|  ||     |_ |       ||_     _|  |  _   | |_     _||    ___|  
-|       ||    _  ||   _   |  |   |    | |_|   |  |   |  |   |___   
-|_______||___| |_||__| |__|  |___|    |_______|  |___|  |_______|  "
-        exit
-fi
-
-echo "type a key word or number you would like to find in your files:"
-FS=":" read -p "type.." \VAR8
+if [ $VAR8 = "yes" ]
+then 
+	echo "type a key word or number you would like to find in your files:"
+else 
+	exit
+fi	
+FS=":" read -p "type.." \VAR21
 rm file
-grep "$VAR8" . -R >> file
+grep "$VAR21" . -R >> file
 vim file
+
+echo "
+  ____________________________________________________________________________________________________________________________________________________________________________________________
+  __)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)__)
+ 
+ "
+
+echo "would you like to add and commmit these changes to git?"
+FS=":" read -p "Enter yes or no " \VAR12
+
+if [ $VAR12 = "yes" ]
+then
+        git add .
+else
 echo "Thanks for using Project 1"
 echo "
  _______  ___   _  _______  __   __    _______  __   __  _______   
@@ -174,6 +180,38 @@ echo "
 |  |_|  ||     |_ |       ||_     _|  |  _   | |_     _||    ___|  
 |       ||    _  ||   _   |  |   |    | |_|   |  |   |  |   |___   
 |_______||___| |_||__| |__|  |___|    |_______|  |___|  |_______|  "
-        
+exit
+fi
+echo "what would you like your commit message to be?"
+FS=":" read -p "Enter your message " \VAR11
 
+git commit -m "$VAR11"
 
+echo "type 'push' to push these changes to git"
+
+FS=":" read -p "Enter 'push' or 'no' " \VAR15
+
+if [ $VAR15 = "push" ]
+then
+        git push
+else
+	echo "Thanks for using Project 1"
+echo "
+ _______  ___   _  _______  __   __    _______  __   __  _______   
+|       ||   | | ||   _   ||  | |  |  |  _    ||  | |  ||       |  
+|   _   ||   |_| ||  |_|  ||  |_|  |  | |_|   ||  |_|  ||    ___|  
+|  | |  ||      _||       ||       |  |       ||       ||   |___   
+|  |_|  ||     |_ |       ||_     _|  |  _   | |_     _||    ___|  
+|       ||    _  ||   _   |  |   |    | |_|   |  |   |  |   |___   
+|_______||___| |_||__| |__|  |___|    |_______|  |___|  |_______|  "
+        exit
+fi
+echo "Thanks for using Project 1"
+echo "
+ _______  ___   _  _______  __   __    _______  __   __  _______   
+|       ||   | | ||   _   ||  | |  |  |  _    ||  | |  ||       |  
+|   _   ||   |_| ||  |_|  ||  |_|  |  | |_|   ||  |_|  ||    ___|  
+|  | |  ||      _||       ||       |  |       ||       ||   |___   
+|  |_|  ||     |_ |       ||_     _|  |  _   | |_     _||    ___|  
+|       ||    _  ||   _   |  |   |    | |_|   |  |   |  |   |___   
+|_______||___| |_||__| |__|  |___|    |_______|  |___|  |_______|  "

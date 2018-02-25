@@ -9,13 +9,13 @@ else
 	clear 
 fi  
 echo "what would you like your commit message to be?"
-FS=":" read -p "Enter your message" \VAR11
+FS=":" read -p "Enter your message " \VAR11
 
 git commit -m "$VAR11"
 
 echo "type 'push' to push these changes to git"
 
-FS=":" read -p "Enter 'push' or 'no'" \VAR15
+FS=":" read -p "Enter 'push' or 'no' " \VAR15
 
 if [ $VAR15 = "push" ]
 then
