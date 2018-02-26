@@ -110,7 +110,7 @@ if [ $VAR6 = "yes" ]
  |__/   |_/   |_/\__/    |_/o|__/\__/ \_/|/  
                                         /|   
                                         \|   "
-	ghc -fno-code *.hs &>> error.log 
+	find . -name "*.hs" -exec ghc -fno-code {} \; &>> error.log 
 fi
 echo "
 (\__/) || 
