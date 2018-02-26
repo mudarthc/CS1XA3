@@ -1,45 +1,50 @@
 diff --git a/Assign1/changes.log b/Assign1/changes.log
-index f8637d1..e69de29 100644
+index da0ff33..e69de29 100644
 --- a/Assign1/changes.log
 +++ b/Assign1/changes.log
-@@ -1,28 +0,0 @@
+@@ -1,45 +0,0 @@
 -diff --git a/Assign1/changes.log b/Assign1/changes.log
--index 60455a4..e69de29 100644
+-index f8637d1..e69de29 100644
 ---- a/Assign1/changes.log
 -+++ b/Assign1/changes.log
--@@ -1,15 +0,0 @@
---diff --git a/Assign1/test b/Assign1/test
---deleted file mode 100755
---index 82be407..0000000
------ a/Assign1/test
---+++ /dev/null
---@@ -1,9 +0,0 @@
----#!/bin/bash
----
----if zenity --entry \
----	title="Add new profile" \
----	text="Enter name of new profile:" \
----	entry-text "NewProfile"
----  	then echo $?
----  	else echo "No name entered"
----fi
+-@@ -1,28 +0,0 @@
+--diff --git a/Assign1/changes.log b/Assign1/changes.log
+--index 60455a4..e69de29 100644
+----- a/Assign1/changes.log
+--+++ b/Assign1/changes.log
+--@@ -1,15 +0,0 @@
+---diff --git a/Assign1/test b/Assign1/test
+---deleted file mode 100755
+---index 82be407..0000000
+------ a/Assign1/test
+---+++ /dev/null
+---@@ -1,9 +0,0 @@
+----#!/bin/bash
+----
+----if zenity --entry \
+----	title="Add new profile" \
+----	text="Enter name of new profile:" \
+----	entry-text "NewProfile"
+----  	then echo $?
+----  	else echo "No name entered"
+----fi
+--diff --git a/Assign1/todo.log b/Assign1/todo.log
+--index 7f00ad8..fc75695 100644
+----- a/Assign1/todo.log
+--+++ b/Assign1/todo.log
+--@@ -1,2 +1,3 @@
+-- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+-- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+--+./README.md:Next user can put all lines with #TODO into a life todo.log.
 -diff --git a/Assign1/todo.log b/Assign1/todo.log
--index 7f00ad8..fc75695 100644
+-index fc75695..c918245 100644
 ---- a/Assign1/todo.log
 -+++ b/Assign1/todo.log
--@@ -1,2 +1,3 @@
+-@@ -1,3 +1,6 @@
+-+./changes.log:- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+-+./changes.log:- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+-+./changes.log:-+./README.md:Next user can put all lines with #TODO into a life todo.log.
 - ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
 - ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
--+./README.md:Next user can put all lines with #TODO into a life todo.log.
-diff --git a/Assign1/todo.log b/Assign1/todo.log
-index fc75695..c918245 100644
---- a/Assign1/todo.log
-+++ b/Assign1/todo.log
-@@ -1,3 +1,6 @@
-+./changes.log:- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
-+./changes.log:- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
-+./changes.log:-+./README.md:Next user can put all lines with #TODO into a life todo.log.
- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
--./README.md:Next user can put all lines with #TODO into a life todo.log.
-+./README.md:Next user can put all lines with #TODO into a file todo.log.
+--./README.md:Next user can put all lines with #TODO into a life todo.log.
+-+./README.md:Next user can put all lines with #TODO into a file todo.log.
