@@ -1,6 +1,81 @@
-./changes.log:- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
-./changes.log:- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
-./changes.log:-+./README.md:Next user can put all lines with #TODO into a life todo.log.
+./changes.log:--- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./changes.log:--- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./changes.log:---+./README.md:Next user can put all lines with #TODO into a life todo.log.
+./changes.log:--+./changes.log:- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./changes.log:--+./changes.log:- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./changes.log:--+./changes.log:-+./README.md:Next user can put all lines with #TODO into a life todo.log.
+./changes.log:-- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./changes.log:-- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./changes.log:---./README.md:Next user can put all lines with #TODO into a life todo.log.
+./changes.log:--+./README.md:Next user can put all lines with #TODO into a file todo.log.
+./changes.log:+./todo.log:./changes.log:--- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./changes.log:+./todo.log:./changes.log:--- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./changes.log:+./todo.log:./changes.log:---+./README.md:Next user can put all lines with #TODO into a life todo.log.
+./changes.log:+./todo.log:./changes.log:--+./changes.log:- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./changes.log:+./todo.log:./changes.log:--+./changes.log:- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./changes.log:+./todo.log:./changes.log:--+./changes.log:-+./README.md:Next user can put all lines with #TODO into a life todo.log.
+./changes.log:+./todo.log:./changes.log:-- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./changes.log:+./todo.log:./changes.log:-- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./changes.log:+./todo.log:./changes.log:---./README.md:Next user can put all lines with #TODO into a life todo.log.
+./changes.log:+./todo.log:./changes.log:--+./README.md:Next user can put all lines with #TODO into a file todo.log.
+./changes.log:+./todo.log:./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./changes.log:+./todo.log:./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./changes.log:+./todo.log:./README.md:Next user can put all lines with #TODO into a file todo.log.
+./changes.log:+./changes.log:--- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./changes.log:+./changes.log:--- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:---+./README.md:Next user can put all lines with #TODO into a life todo.log.
+./changes.log:+./changes.log:--+./changes.log:- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./changes.log:+./changes.log:--+./changes.log:- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:--+./changes.log:-+./README.md:Next user can put all lines with #TODO into a life todo.log.
+./changes.log:+./changes.log:-- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./changes.log:+./changes.log:-- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:---./README.md:Next user can put all lines with #TODO into a life todo.log.
+./changes.log:+./changes.log:--+./README.md:Next user can put all lines with #TODO into a file todo.log.
+./changes.log:+./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./changes.log:+./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./changes.log:+./README.md:Next user can put all lines with #TODO into a file todo.log.
+./changes.log:-./changes.log:- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./changes.log:-./changes.log:- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./changes.log:-./changes.log:-+./README.md:Next user can put all lines with #TODO into a life todo.log.
+./changes.log:+./changes.log:--- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./changes.log:+./changes.log:--- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:---+./README.md:Next user can put all lines with #TODO into a life todo.log.
+./changes.log:+./changes.log:--+./changes.log:- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./changes.log:+./changes.log:--+./changes.log:- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:--+./changes.log:-+./README.md:Next user can put all lines with #TODO into a life todo.log.
+./changes.log:+./changes.log:-- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./changes.log:+./changes.log:-- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./changes.log:+./changes.log:---./README.md:Next user can put all lines with #TODO into a life todo.log.
+./changes.log:+./changes.log:--+./README.md:Next user can put all lines with #TODO into a file todo.log.
+./changes.log: ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./changes.log: ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./changes.log: ./README.md:Next user can put all lines with #TODO into a file todo.log.
+./file:./todo.log:./changes.log:--- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./file:./todo.log:./changes.log:--- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./file:./todo.log:./changes.log:---+./README.md:Next user can put all lines with #TODO into a life todo.log.
+./file:./todo.log:./changes.log:--+./changes.log:- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./file:./todo.log:./changes.log:--+./changes.log:- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./file:./todo.log:./changes.log:--+./changes.log:-+./README.md:Next user can put all lines with #TODO into a life todo.log.
+./file:./todo.log:./changes.log:-- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./file:./todo.log:./changes.log:-- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./file:./todo.log:./changes.log:---./README.md:Next user can put all lines with #TODO into a life todo.log.
+./file:./todo.log:./changes.log:--+./README.md:Next user can put all lines with #TODO into a file todo.log.
+./file:./todo.log:./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./file:./todo.log:./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./file:./todo.log:./README.md:Next user can put all lines with #TODO into a file todo.log.
+./file:./changes.log:--- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./file:./changes.log:--- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./file:./changes.log:---+./README.md:Next user can put all lines with #TODO into a life todo.log.
+./file:./changes.log:--+./changes.log:- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./file:./changes.log:--+./changes.log:- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./file:./changes.log:--+./changes.log:-+./README.md:Next user can put all lines with #TODO into a life todo.log.
+./file:./changes.log:-- ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./file:./changes.log:-- ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./file:./changes.log:---./README.md:Next user can put all lines with #TODO into a life todo.log.
+./file:./changes.log:--+./README.md:Next user can put all lines with #TODO into a file todo.log.
+./file:./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
+./file:./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
+./file:./README.md:Next user can put all lines with #TODO into a file todo.log.
 ./ProjectAnalyze.sh:echo "Put each line from every file of your project with the tag #TODO into todo.log?"
 ./ProjectAnalyze.sh:	grep "#TODO" . -R  >> todo.log
 ./README.md:Next user can put all lines with #TODO into a file todo.log.
