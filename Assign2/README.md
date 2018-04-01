@@ -1,14 +1,19 @@
-# Project Title
+# Assignment 2
 
-One Paragraph of project description goes here
+elm website and web app 
 
-## Getting Started
+## CV
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+my CV was created with some references including:
+https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
+https://www.w3schools.com/bootstrap/bootstrap_images.asp
 
-### Prerequisites
+### Web App 
 
-What things you need to install the software and how to install them
+my web app was created as a game, similar to a drawing connect the dots game. 
+the aim is to connect the dots and create the star using the directed code of colours on the side.
+the controls of w,s,a,d control the movements up and down. 
+the enter button draws the line 
 
 ```
 Give examples
