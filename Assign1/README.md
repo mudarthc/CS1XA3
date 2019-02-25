@@ -1,5 +1,5 @@
-#Assignment 1 
-
+# Assignment 1 
+# Utitily 
 The script opens with a welcome banner. 
 The script asks your name and uses this for a later output. 
 Then the user is told where they are in the path directory and also the files in the directory in a list format. 
@@ -8,8 +8,17 @@ For convenience I coppied a bash fuction sheet with discriptions to a file calle
 Then the user can put all uncommited changes into changes.log.
 Next user can put all lines with #TODO into a file todo.log.
 Also the user can place all haskell errors into error.log.
-Another feature is after updating these files the user can open and view any file.
+
+# Challenges 
+Creating special features in the script. 
+
+
+# How I overcame 
+
+Implemented various useful features that i would use on a day to day basic 
+for example :
+
+A feature is after updating these files the user can open and view any file.
 After opening the file the user is shown the number of lines in that file.
 The next feature is that the user can grep a specific word or phrase and then put the line and location into a file named "file".
-The next feature is that the user can add to git, commit with a commit message as prompted, and git push, with the input "push". 
-
+The last feature is that the user can add to git, commit with a commit message as prompted, and git push, with the input "push". 
