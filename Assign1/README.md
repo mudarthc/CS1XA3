@@ -1,4 +1,4 @@
-##Assignment 1 
+#Assignment 1 
 
 The script opens with a welcome banner. 
 The script asks your name and uses this for a later output. 
